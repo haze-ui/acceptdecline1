@@ -1,34 +1,23 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
-    <LinearLayout android:id="@+id/appointmentContainer" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
+    <LinearLayout android:id="@+id/appointmentContainer" android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/buttonBack"
-            android:layout_width="158dp"
-            android:layout_height="48dp"
-            android:layout_gravity="start"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="24dp"
-            android:backgroundTint="#8CACEB"
-            android:text="Back"
-            android:textColor="#050303"
+        <Button android:id="@+id/buttonBack" android:layout_width="158dp"
+            android:layout_height="48dp" android:layout_gravity="start"
+            android:layout_marginTop="24dp" android:layout_marginBottom="24dp"
+            android:backgroundTint="#8CACEB" android:text="Back" android:textColor="#050303"
             android:textSize="14sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="544dp"
+        <LinearLayout android:layout_width="match_parent" android:layout_height="544dp"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Accepted"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+            <TextView android:id="@+id/textView22" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center"
+                android:text="Accepted" android:textSize="24sp" android:textStyle="bold" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
+            <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
         <!--  Appointment cards will be dynamically added here  -->
